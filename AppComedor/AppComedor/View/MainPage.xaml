@@ -14,6 +14,6 @@
            
         </pancake:PancakeView>
         <Button Text="Empezar" Command="{Binding NavegarCommand}"/>
-        
+        <Button></Button>
     </StackLayout>
 </ContentPage>
