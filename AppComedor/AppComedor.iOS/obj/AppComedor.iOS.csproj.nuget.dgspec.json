@@ -1,0 +1,156 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor.iOS\\AppComedor.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor.iOS\\AppComedor.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor.iOS\\AppComedor.iOS.csproj",
+        "projectName": "AppComedor.iOS",
+        "projectPath": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor.iOS\\AppComedor.iOS.csproj",
+        "packagesPath": "C:\\Users\\renlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\renlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {
+              "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\AppComedor.csproj": {
+                "projectPath": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\AppComedor.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2196, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\AppComedor.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\AppComedor.csproj",
+        "projectName": "AppComedor",
+        "projectPath": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\AppComedor.csproj",
+        "packagesPath": "C:\\Users\\renlo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\renlo\\OneDrive\\Escritorio\\Tesis\\XamarinTesis\\AppComedor\\AppComedor\\AppComedor\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\renlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.CommunityToolkit": {
+              "target": "Package",
+              "version": "[2.0.6, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[5.0.0.2291, )"
+            },
+            "Xamarin.Forms.PancakeView": {
+              "target": "Package",
+              "version": "[2.3.0.759, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

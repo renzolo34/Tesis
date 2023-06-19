@@ -1,0 +1,16 @@
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\bin\Debug\netstandard2.0\AppComedor.deps.json
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\bin\Debug\netstandard2.0\AppComedor.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\bin\Debug\netstandard2.0\AppComedor.pdb
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.csproj.AssemblyReference.cache
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.AssemblyInfoInputs.cache
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.AssemblyInfo.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.csproj.CoreCompileInputs.cache
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\refint\AppComedor.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\AppComedor.pdb
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\ref\AppComedor.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Welcome.xaml.g.cs
