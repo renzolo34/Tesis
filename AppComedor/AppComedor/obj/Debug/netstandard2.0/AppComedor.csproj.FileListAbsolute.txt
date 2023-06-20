@@ -14,3 +14,8 @@ C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppC
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\ref\AppComedor.dll
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Welcome.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Carrito.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\ContainerTabbedPage.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Home.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Search.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Settings.xaml.g.cs

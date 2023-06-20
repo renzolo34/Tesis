@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppComedor.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:Key="Neucha" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Neucha-Regular.ttf#Neucha-Regular"/>
+            </OnPlatform>
+            <OnPlatform x:Key="Lilita" x:TypeArguments="x:String">
+                <On Platform="Android" Value="LilitaOne-Regular.ttf#LilitaOne-Regular"/>
+            </OnPlatform>
+            <OnPlatform x:Key="frank" x:TypeArguments="x:String">
+                <On Platform="Android" Value="Franks.ttf#Franks"/>
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

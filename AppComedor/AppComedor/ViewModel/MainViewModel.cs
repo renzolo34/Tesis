@@ -11,25 +11,16 @@ using Xamarin.Forms;
 
 namespace AppComedor.ViewModel
 {
-    public class MainViewModel : INotifyPropertyChanged
+    public class MainViewModel : ViewModelBase
     {
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        private INavigation navigation;
-
         public MainViewModel(INavigation navigation)
         {
-            this.navigation = navigation;
+            Navigation = navigation;
         }
 
         public async Task NavegarWelcome()
         {
-            await navigation.PushAsync(new Welcome());
+            await Navigation.PushAsync(new Welcome());
         }
 
         public ICommand NavegarCommand => new Command(async () => await NavegarWelcome());

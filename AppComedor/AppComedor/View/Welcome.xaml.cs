@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppComedor.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,9 @@ namespace AppComedor.View
 		public Welcome ()
 		{
 			InitializeComponent ();
-		}
+
+            var viewModel = new WelcomeViewModel(Navigation);
+            BindingContext = viewModel;
+        }
 	}
 }

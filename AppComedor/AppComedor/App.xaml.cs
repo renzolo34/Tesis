@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+[assembly: ExportFont("Neucha-Regular.ttf", Alias ="Neucha-font")]
 namespace AppComedor
 {
     public partial class App : Application
