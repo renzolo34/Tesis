@@ -19,45 +19,65 @@
             <Style x:Key="ContainerGrid" TargetType="Grid">
                 <Setter Property="Margin" Value="10,0,0,0"/>
             </Style>
+            <Style x:Key="TitleDish" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="FontFamily" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="ContentDish" TargetType="Label">
+                <Setter Property="TextColor" Value="Gray"/>
+                <Setter Property="FontSize" Value="13"/>
+                <Setter Property="FontFamily" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
+            <Style x:Key="Price" TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="FontFamily" Value="Bold"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center" />
+            </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <ScrollView>
-            <Grid
-                Padding="20,44,28,0"
-                RowDefinitions="Auto,Auto,Auto,Auto">
-                <!--Profile-->
-                <Grid
-                    ColumnDefinitions="Auto,*,Auto">
-                    <Image Source="@drawable/Person" WidthRequest="50" HeightRequest="50">
-                        <Image.Clip>
-                            <EllipseGeometry
-                                Center="30,30"   
-                                RadiusX="45"
-                                RadiusY="45"
-                                />
-                        </Image.Clip>
-                    </Image>
+        <ScrollView >
+            <StackLayout>
+                <Grid HeightRequest="900">
                     <Grid
-                        Grid.Column="1"
-                        RowSpacing="0"
-                        RowDefinitions="Auto,Auto"
-                        Padding="3"
-                        Style="{StaticResource ContainerGrid}">
-                        <Label Text="Renzo Lopez Lozano" 
-                               Style="{StaticResource Name}"/>
-                        <Label/>
-                        <Label 
-                            Grid.Row="1"
-                            Text="Diseño y Desarrollo de Software" 
-                               Style="{StaticResource SubName}"/>
-                        <Label/>
-                    </Grid>
+                Padding="20,44,20,0"
+                RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto,Auto">
+                    <!--Profile-->
                     <Grid
-                        Grid.Column="2">
-                        <Image Source="@drawable/Love"/>
+                        ColumnDefinitions="Auto,*,Auto">
+                        <Image Source="@drawable/Person" WidthRequest="50" HeightRequest="50">
+                            <Image.Clip>
+                                <EllipseGeometry
+                                    Center="30,30"   
+                                    RadiusX="45"
+                                    RadiusY="45"
+                                    />
+                            </Image.Clip>
+                        </Image>
+                        <Grid
+                            Grid.Column="1"
+                            RowSpacing="0"
+                            RowDefinitions="Auto,Auto"
+                            Padding="3"
+                            Style="{StaticResource ContainerGrid}">
+                            <Label Text="Renzo Lopez Lozano" 
+                                   Style="{StaticResource Name}"/>
+                            <Label/>
+                            <Label 
+                                Grid.Row="1"
+                                Text="Diseño y Desarrollo de Software" 
+                                   Style="{StaticResource SubName}"/>
+                            <Label/>
+                        </Grid>
+                        <Grid
+                            Grid.Column="2">
+                            <Image Source="@drawable/Love"/>
+                        </Grid>
                     </Grid>
-                </Grid>
                 <!--SEARCH-->
                 <Grid
                     Grid.Row="1"
@@ -65,7 +85,7 @@
                     <pancake:PancakeView BackgroundColor="#EBF9FF" 
                                          Margin="0,12,0,0" CornerRadius="5" WidthRequest="315" HeightRequest="45">
                         <SearchBar PlaceholderColor="#1F86FF" TextColor="#1F86FF" CancelButtonColor="#1F86FF"
-                                   Placeholder="Buscar" FontSize="18"/>
+                                   Placeholder="Buscar" FontSize="18"  />
                     </pancake:PancakeView>
                 </Grid>
                 <!--OFERTAS-->
@@ -75,12 +95,138 @@
                     <Grid
                         ColumnDefinitions="*,Auto">
                         <pancake:PancakeView BackgroundColor="#EBF9FF" 
-                                         Margin="0,12,0,0" CornerRadius="20" WidthRequest="220" HeightRequest="138">
-                            <Image Source="@drawable/Oferta" WidthRequest="220" HeightRequest="190"/>
+                                         Margin="0,12,0,0" CornerRadius="20" WidthRequest="220" HeightRequest="142">
+                            <Image Source="@drawable/Oferta"/>
                         </pancake:PancakeView>
                     </Grid>
                 </Grid>
+                <!--categorias-->
+                <Grid
+                    Grid.Row="3"
+                    ColumnDefinitions="*,Auto">
+                    <Label Text="Categorias" Padding="2,8,0,6" FontSize="16" FontAttributes="Bold" TextColor="Black" FontFamily="{StaticResource frank}"/>
+                </Grid>
+
+                <Grid
+                    Grid.Row="4"
+                    RowDefinitions="*">
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never"
+                                 >
+                        <StackLayout Orientation="Horizontal" >
+                            <Button Text="Almuerzo" Style="{StaticResource StyleCategorias}">
+                                <Button.ImageSource>
+                                    <FileImageSource File="cooking.png" />
+                                </Button.ImageSource>
+                            </Button>
+                            <Button Text="Desayuno" Style="{StaticResource StyleCategorias}">
+                                <Button.ImageSource>
+                                    <FileImageSource File="coffee.png" />
+                                </Button.ImageSource>
+                            </Button>
+                            <Button Text="Bebidas" Style="{StaticResource StyleCategorias}">
+                                <Button.ImageSource>
+                                    <FileImageSource File="bebida.png" />
+                                </Button.ImageSource>
+                            </Button>
+                            <Button></Button>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+                <Grid
+                    Grid.Row="5"
+                    RowDefinitions="*,Auto" 
+                    Padding="0,10,0,0"
+                     >
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" Padding="3">
+                            <Frame Opacity="1"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,5,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Lomo Saltado" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81"/>
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Picante de Carne" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
+                <Grid
+                    Grid.Row="6"
+                    ColumnDefinitions="*,Auto">
+                    <Label Text="Los Mas Populares" Padding="2,8,0,6" FontSize="16" FontAttributes="Bold" TextColor="Black" FontFamily="{StaticResource frank}"/>
+                </Grid>
+                <Grid
+                    Grid.Row="7"
+                    RowDefinitions="*,Auto"
+                     >
+                    <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
+                        <StackLayout Orientation="Horizontal" Padding="3">
+                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Lomo Saltado" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
+                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
+                                    <Image Source="@drawable/arrozPollo" WidthRequest="81"/>
+                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
+                                        <Label Text="Picante de Carne" Style="{StaticResource TitleDish}"/>
+                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
+                                    </StackLayout>
+                                </Grid>
+                            </Frame>
+                        </StackLayout>
+                    </ScrollView>
+                </Grid>
             </Grid>
-        </ScrollView>
+                </Grid>
+                
+            </StackLayout>
+            
+        </ScrollView> 
     </ContentPage.Content>
 </ContentPage>
