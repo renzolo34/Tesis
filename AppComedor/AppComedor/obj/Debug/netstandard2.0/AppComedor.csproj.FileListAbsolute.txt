@@ -19,3 +19,5 @@ C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppC
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Home.xaml.g.cs
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Search.xaml.g.cs
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Navbar\Settings.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\AgregarProducto.xaml.g.cs
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor\obj\Debug\netstandard2.0\View\Page1.xaml.g.cs

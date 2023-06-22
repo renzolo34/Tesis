@@ -695,3 +695,7 @@ C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppC
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\bebida.png
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\coffee.png
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\arrozpollo.png
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\back.png
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\fondocomida.jpg
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\plus.png
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.Android\obj\Debug\130\res\drawable\minus.png

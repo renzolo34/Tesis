@@ -139,38 +139,41 @@
                      >
                     <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never">
                         <StackLayout Orientation="Horizontal" Padding="3">
-                            <Frame Opacity="1"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
-                                Margin="0,0,5,0" Padding="15,0,15,0" HasShadow="True">
-                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
-                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
-                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
-                                        <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}"/>
-                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
-                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
-                                    </StackLayout>
-                                </Grid>
+                            <Frame Opacity="1"  WidthRequest="120" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,5,0" Padding="5" HasShadow="True" >
+                                        <StackLayout Spacing="0">
+                                            <Image Source="@drawable/arrozPollo" WidthRequest="108" Margin="0,28,0,28" />
+                                            <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}" />
+                                            <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                            <Label Text="S/15.00" Style="{StaticResource Price}" />
+                                        </StackLayout>
                             </Frame>
-                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
-                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
-                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
-                                    <Image Source="@drawable/arrozPollo" WidthRequest="81" />
-                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
-                                        <Label Text="Lomo Saltado" Style="{StaticResource TitleDish}"/>
-                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
-                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
-                                    </StackLayout>
-                                </Grid>
+                            <Frame Opacity="1"  WidthRequest="120" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,5,0" Padding="5" HasShadow="True" >
+                                        <StackLayout Spacing="0">
+                                            <Image Source="@drawable/arrozPollo" WidthRequest="108" Margin="0,28,0,28" />
+                                            <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}" />
+                                            <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                            <Label Text="S/15.00" Style="{StaticResource Price}" />
+                                        </StackLayout>
                             </Frame>
-                            <Frame Opacity="10"  WidthRequest="100" HeightRequest="190" CornerRadius="8" 
-                                Margin="0,0,4,0" Padding="15,0,15,0" HasShadow="True">
-                                <Grid Grid.Row="1" Margin="-4,3,-4,-5"  Padding="0,10,0,0" >
-                                    <Image Source="@drawable/arrozPollo" WidthRequest="81"/>
-                                    <StackLayout Grid.Row="1" Orientation="Vertical" Padding="0,4,0,0" Spacing="0" >
-                                        <Label Text="Picante de Carne" Style="{StaticResource TitleDish}"/>
-                                        <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
-                                        <Label Text="S/15.00" Style="{StaticResource Price}"  />
-                                    </StackLayout>
-                                </Grid>
+                            <Frame Opacity="1"  WidthRequest="120" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,5,0" Padding="5" HasShadow="True" >
+                                        <StackLayout Spacing="0">
+                                            <Image Source="@drawable/arrozPollo" WidthRequest="108" Margin="0,28,0,28" />
+                                            <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}" />
+                                            <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                            <Label Text="S/15.00" Style="{StaticResource Price}" />
+                                        </StackLayout>
+                            </Frame>
+                            <Frame Opacity="1"  WidthRequest="120" HeightRequest="190" CornerRadius="8" 
+                                Margin="0,0,5,0" Padding="5" HasShadow="True" >
+                                        <StackLayout Spacing="0">
+                                            <Image Source="@drawable/arrozPollo" WidthRequest="108" Margin="0,28,0,28" />
+                                            <Label Text="Arroz Con Pollo" Style="{StaticResource TitleDish}" />
+                                            <Label Text="y Refresco" Style="{StaticResource ContentDish}" />
+                                            <Label Text="S/15.00" Style="{StaticResource Price}" />
+                                        </StackLayout>
                             </Frame>
                         </StackLayout>
                     </ScrollView>

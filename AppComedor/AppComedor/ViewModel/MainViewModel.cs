@@ -20,7 +20,7 @@ namespace AppComedor.ViewModel
 
         public async Task NavegarWelcome()
         {
-            await Navigation.PushAsync(new Welcome());
+            await Navigation.PushAsync(new AgregarProducto());
         }
 
         public ICommand NavegarCommand => new Command(async () => await NavegarWelcome());
