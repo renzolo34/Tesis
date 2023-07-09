@@ -22,7 +22,7 @@
                         </Grid>
                     </StackLayout>
                 </Grid>
-                <Frame CornerRadius="25" VerticalOptions="FillAndExpand" Margin="0,-35,0,0" HasShadow="True">
+                <Frame CornerRadius="25" VerticalOptions="FillAndExpand" Margin="0,100,0,0" HasShadow="True">
                     <Grid>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -41,16 +41,16 @@
                             </StackLayout>
                             
                         </Grid>
-                        <Grid  Padding="8" Margin="0,85,0,100" >
+                        <Grid  Padding="8" Margin="0,85,0,120" BackgroundColor="Red" >
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="*"/>
                             </Grid.RowDefinitions>
-                            <StackLayout Grid.Row="0"  HeightRequest="40" >
+                            <StackLayout Grid.Row="0" >
                                 <Label Text="Detalles" FontAttributes="Bold" FontSize="20"/>
                                 <Label Text="Descripcion del producto" FontSize="18"/>
                             </StackLayout>
                         </Grid>
-                        <pancake:PancakeView BackgroundColor="Transparent" CornerRadius="20" Margin="30,280,30,0" WidthRequest="25">
+                        <pancake:PancakeView BackgroundColor="Transparent" CornerRadius="20" Margin="30,420,30,0" WidthRequest="25">
                             <pancake:PancakeView.Shadow>
                                 <pancake:DropShadow Color="Black" BlurRadius="8" Offset="-1,-1" Opacity="1"/>
                             </pancake:PancakeView.Shadow>

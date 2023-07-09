@@ -11,6 +11,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
   <application android:label="AppComedor.Android" android:theme="@style/MainTheme" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true" android:extractNativeLibs="true">
+    <uses-library android:name="org.apache.http.legacy" android:required="false" />
     <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:icon="@mipmap/icon" android:label="AppComedor" android:theme="@style/MainTheme" android:name="crc647ced9d2c0ee74e48.MainActivity" />
     <activity android:configChanges="screenSize" android:icon="@drawable/logo_comedor" android:label="TecsupFOOD" android:theme="@style/SplashTheme" android:name="crc647ced9d2c0ee74e48.SplashActivity" android:exported="true">
       <intent-filter>

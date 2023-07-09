@@ -49,7 +49,7 @@
                     <!--Profile-->
                     <Grid
                         ColumnDefinitions="Auto,*,Auto">
-                        <Image Source="@drawable/Person" WidthRequest="50" HeightRequest="50">
+                            <Image x:Name="imgProfile" WidthRequest="50" HeightRequest="50">
                             <Image.Clip>
                                 <EllipseGeometry
                                     Center="30,30"   
@@ -64,12 +64,12 @@
                             RowDefinitions="Auto,Auto"
                             Padding="3"
                             Style="{StaticResource ContainerGrid}">
-                            <Label Text="Renzo Lopez Lozano" 
+                            <Label x:Name="lblName"
                                    Style="{StaticResource Name}"/>
                             <Label/>
                             <Label 
                                 Grid.Row="1"
-                                Text="Diseño y Desarrollo de Software" 
+                                x:Name="lblEmail"
                                    Style="{StaticResource SubName}"/>
                             <Label/>
                         </Grid>
@@ -112,11 +112,10 @@
                     RowDefinitions="*">
                     <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never"
                                  >
-                        <StackLayout Orientation="Horizontal" >
-                            <Button Text="Almuerzo" Style="{StaticResource StyleCategorias}">
-                                <Button.ImageSource>
-                                    <FileImageSource File="cooking.png" />
-                                </Button.ImageSource>
+                        <StackLayout Orientation="Horizontal" x:Name="stackLayout">
+                            
+                            <!--<Button Text="{Binding nombre}" Style="{StaticResource StyleCategorias}">
+                                
                             </Button>
                             <Button Text="Desayuno" Style="{StaticResource StyleCategorias}">
                                 <Button.ImageSource>
@@ -128,7 +127,7 @@
                                     <FileImageSource File="bebida.png" />
                                 </Button.ImageSource>
                             </Button>
-                            <Button></Button>
+                            <Button></Button>-->
                         </StackLayout>
                     </ScrollView>
                 </Grid>

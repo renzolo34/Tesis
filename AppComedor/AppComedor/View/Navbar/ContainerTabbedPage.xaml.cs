@@ -21,5 +21,7 @@ namespace AppComedor.View.Navbar
             On<Android>().SetIsSmoothScrollEnabled(true);
 
         }
+
+
     }
 }

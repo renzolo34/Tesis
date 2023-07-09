@@ -1,5 +1,6 @@
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\AppComedor.iOS.exe
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\AppComedor.iOS.pdb
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.dll
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Xamarin.Essentials.dll
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Xamarin.Essentials.pdb
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Xamarin.Forms.Core.dll
@@ -62,4 +63,5 @@ C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppC
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\obj\iPhone\Debug\AppComedor.iOS.csproj.CopyComplete
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\obj\iPhone\Debug\AppComedor.iOS.exe
 C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\obj\iPhone\Debug\AppComedor.iOS.pdb
-C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Xamarin.CommunityToolkit.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
+C:\Users\renlo\OneDrive\Escritorio\Tesis\XamarinTesis\AppComedor\AppComedor\AppComedor.iOS\bin\iPhone\Debug\websocket-sharp-core.dll

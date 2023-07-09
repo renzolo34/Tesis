@@ -65,6 +65,9 @@
         "win": {
           "#import": []
         },
+        "win-arm64": {
+          "#import": []
+        },
         "win-x64": {
           "#import": []
         },
@@ -120,6 +123,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Xamarin.CommunityToolkit": {
               "target": "Package",
               "version": "[2.0.6, )"
@@ -135,6 +142,10 @@
             "Xamarin.Forms.PancakeView": {
               "target": "Package",
               "version": "[2.3.0.759, )"
+            },
+            "websocketsharp.core": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [
@@ -148,7 +159,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
