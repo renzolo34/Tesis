@@ -33,6 +33,9 @@ namespace AppComedor.View.Navbar
             LoadCategories();
 
             ConnectWebSocket();
+
+            LoadCarta();    
+
         }
 
         public Home(string NameValue, string EmailValue, ImageSource ImageValue)
@@ -46,9 +49,10 @@ namespace AppComedor.View.Navbar
             lblEmail.Text = email;
             imgProfile.Source = image;
 
+            LoadCategories();
             // Resto del código...
             ConnectWebSocket();
-            LoadCategories();
+            LoadCarta();
         }
 
         public async void LoadCategories()
@@ -56,8 +60,6 @@ namespace AppComedor.View.Navbar
             HttpClient client = new HttpClient();
             var response = await client.GetStringAsync("https://apiapp-production.up.railway.app/api/categoria");
             var categorias = JsonConvert.DeserializeObject<List<CategoriasAPI>>(response);
-
-            stackLayout.Children.Clear();
 
             foreach (var categoria in categorias)
             {
@@ -68,13 +70,15 @@ namespace AppComedor.View.Navbar
                     WidthRequest = 120,
                     TextColor = Color.White,
                     TextTransform = TextTransform.None,
-                    BackgroundColor = Color.FromHex("#1F86FF")
+                    BackgroundColor = Color.FromHex("#1F86FF"),
+                    CommandParameter = categoria.id_categoria
+
 
                 };
 
                 btnCategoria.Clicked += (sender, e) =>
                 {
-                    // Acciones a realizar al hacer clic en el botón de la categoría
+                    LoadComidasPorCategoria(categoria.nombre);
                 };
 
                 // Agregar el botón a un contenedor, por ejemplo, un StackLayout
@@ -82,7 +86,87 @@ namespace AppComedor.View.Navbar
             }
         }
 
+        public async void LoadCarta()
+        {
+            HttpClient client = new HttpClient();
+            var response = await client.GetStringAsync("https://apiapp-production.up.railway.app/api/comidas/movil");
+            var menus = JsonConvert.DeserializeObject<List<MenuAPI>>(response);
 
+            foreach (var menu in menus)
+            {
+                Frame unFrame = new Frame
+                {
+                    Opacity = 1,
+                    WidthRequest = 120,
+                    HeightRequest = 190,
+                    CornerRadius = 8,
+                    Margin = new Thickness(0, 0, 5, 0),
+                    Padding = new Thickness(5),
+                    HasShadow = true
+
+                };
+                var interComida = new StackLayout();
+
+                Label labelTitle = new Label
+                {
+                    Text = menu.nombre,
+                    FontSize = 14,
+                    TextColor = Color.Black,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "HelveticaNeue-Bold" : Device.RuntimePlatform == Device.Android ? "sans-serif-light" : null,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                };
+
+                Label labelPrecio = new Label
+                {
+                    Text = "S/ " + menu.precio,
+                    FontSize = 15,
+                    TextColor = Color.Black,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "HelveticaNeue-Bold" : Device.RuntimePlatform == Device.Android ? "sans-serif-light" : null,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                };
+
+                Image image = new Image
+                {
+                    Source = menu.fileUrl,
+                    WidthRequest = 108,
+                    HeightRequest = 120,
+ 
+                };
+
+                unFrame.Content = interComida;
+                interComida.Children.Add(image);
+                interComida.Children.Add(labelTitle);
+                interComida.Children.Add(labelPrecio);
+                stackComida.Children.Add(unFrame);
+            }
+        }
+
+        private void ConnectWebSocket()
+        {
+            webSocket = new WebSocket("wss://apiapp-production.up.railway.app/api/categoria");
+
+            webSocket.OnMessage += (sender, e) =>
+            {
+                // Aquí puedes procesar los datos recibidos en tiempo real
+                var message = e.Data;
+                Device.BeginInvokeOnMainThread(() =>
+                {
+                    // Actualizar la interfaz de usuario según los datos recibidos
+                });
+            };
+
+            webSocket.OnOpen += (sender, e) =>
+            {
+                // La conexión se ha abierto correctamente
+            };
+
+            webSocket.OnClose += (sender, e) =>
+            {
+                // La conexión se ha cerrado
+            };
+
+            webSocket.Connect();
+        }
 
         public void UpdateData(string NameValue, string EmailValue, ImageSource ImageValue)
         {
@@ -91,43 +175,85 @@ namespace AppComedor.View.Navbar
             imgProfile.Source = ImageValue;
         }
 
+        public async void LoadComidasPorCategoria(string nombreCategoria)
+        {
+            HttpClient client = new HttpClient();
+            var apiUrl = $"https://apiapp-production.up.railway.app/api/comidas/categoria/{nombreCategoria}";
+            var response = await client.GetStringAsync(apiUrl);
+            var comidas = JsonConvert.DeserializeObject<List<MenuAPI>>(response);
+
+            stackComida.Children.Clear(); // Limpiar las comidas actuales en el contenedor
+
+            foreach (var comida in comidas)
+            {
+                Frame unFrame = new Frame
+                {
+                    Opacity = 1,
+                    WidthRequest = 120,
+                    HeightRequest = 190,
+                    CornerRadius = 8,
+                    Margin = new Thickness(0, 0, 5, 0),
+                    Padding = new Thickness(5),
+                    HasShadow = true
+
+                };
+                var interComida = new StackLayout();
+
+                Label labelTitle = new Label
+                {
+                    Text = comida.nombre,
+                    FontSize = 14,
+                    TextColor = Color.Black,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "HelveticaNeue-Bold" : Device.RuntimePlatform == Device.Android ? "sans-serif-light" : null,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                };
+
+                Label labelPrecio = new Label
+                {
+                    Text = "S/ " + comida.precio,
+                    FontSize = 15,
+                    TextColor = Color.Black,
+                    FontFamily = Device.RuntimePlatform == Device.iOS ? "HelveticaNeue-Bold" : Device.RuntimePlatform == Device.Android ? "sans-serif-light" : null,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                };
+
+                Image image = new Image
+                {
+                    Source = comida.fileUrl,
+                    WidthRequest = 108,
+                    HeightRequest = 120,
+
+                };
+
+                unFrame.Content = interComida;
+                interComida.Children.Add(image);
+                interComida.Children.Add(labelTitle);
+                interComida.Children.Add(labelPrecio);
+                stackComida.Children.Add(unFrame);
+            }
+        }
+
+        private void todopress(object sender, EventArgs e)
+        {
+            stackComida.Children.Clear();
+            LoadCarta();
+        }
+
+
         public class CategoriasAPI
         {
             public int id_categoria { get; set; }
             public string nombre { get; set; }
-
+            //public DateTime createdAt { get; set; }
+            //public DateTime updatedAt { get; set; }
         }
 
-        private void ConnectWebSocket()
+
+        public class MenuAPI
         {
-            webSocket = new WebSocket("wss://apiapp-production.up.railway.app/api/categoria");
-
-            webSocket.OnOpen += (sender, e) =>
-            {
-                // WebSocket connection opened
-            };
-
-            webSocket.OnMessage += (sender, e) =>
-            {
-                if (!string.IsNullOrEmpty(e.Data))
-                {
-                    // Handle received message
-                }
-            };
-
-            webSocket.OnError += (sender, e) =>
-            {
-                // Handle WebSocket errors
-            };
-
-            webSocket.OnClose += (sender, e) =>
-            {
-                // WebSocket connection closed
-            };
-
-            webSocket.Connect();
+            public string nombre { get; set; }
+            public string precio { get; set; }
+            public string fileUrl { get; set; }
         }
-
-       
     }
 }
